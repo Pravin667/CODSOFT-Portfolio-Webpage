@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Initial Page Set Up */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Html, Body Styling */
+
+html,body{
+    background-color: rgb(0, 0, 0);
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Extra gapping  */
+
+.gapping{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+
+nav{
+    box-shadow: 5px 10px 5px rgba(255, 255, 255, 0.06);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: orange;
+    padding: 12px 0px;
+    z-index: 1;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+.logo_container{
+    margin-top: 4px;
+    cursor: pointer;
+}
+.logo_container img{
+    height: 6vh;
+    border-radius: 5px 5px;
+}
+
+.btn_me{
+    margin-left: 67rem;
+    margin-right: 20px;
+    padding: 8px 15px;
+    font-size: 15px;
+    background-color: orange;
+    border: 2px solid;
+    border-radius: 8px;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.btn_me:hover{
+    background-color: black;
+    border: solid black;
+    color: aliceblue;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.bar_icon i{
+    font-size: 20px;
+    color: black;
+}
+
+/* Profile */
+
+.Profile{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    padding-bottom: 70px;
+}
+
+.Profile_image img{
+    width: 70vh;
+}
+
+.Profile_content{
+    font-size: 50px;
+    color: aliceblue;
+}
+.Profile_content span{
+    color: rgb(49, 194, 251);
+}
+.Profile_content h4{
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 11vh;
+}
+
+/* Skill section */
+.skill_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin: 10vh 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.skill_section img{
+    border-radius: 10px;
+}
+
+.skill_title{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.skill_title h1{
+    font-size: 6vh;
+    font-weight: 250;
+}
+
+.skill_title span{
+    color: rgb(49, 194, 251);
+}
+
+.Row_1{
+    display: flex;
+    flex-direction: row;
+    gap: 15vh;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.Row_1 img{
+    width: 70px;
+    height: 80px;
+}
+
+.stars{
+    margin-left: 6px;
+}
+
+.stars i{
+    width: 16px;
+    height: 16px;
+}
+
+/* Project Section */
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.heading h1{
+    font-size: 6vh;
+    font-weight: 100;
+}
+.heading span{
+    color: rgb(49, 194, 251);
+}
+
+.work{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 70px auto;
+}
+
+.grid_item0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card0{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px  rgba(255, 255, 255, 1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card0:hover{
+    transform: scale(1.10);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.image_container0 img{
+    width: 40vh;
+}
+
+.card_content0{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    color: aliceblue;
+    padding: 20px;
+}
+.card_content0 h3{
+    color: orange;
+    margin-bottom: 10px;
+
+}
+.card_content0 p{
+    text-align: justify;
+    word-wrap: break-word;
+}
+.See{
+    margin-left: 66.5rem;
+    margin-bottom: 50px;
+}
+
+.See a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.See a:hover{
+    text-decoration: underline;
+}
+
+/* Resume Section */
+
+.Resume{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0;
+}
+
+.resume h1{
+    color: aliceblue;
+    font-size: 6vh;
+    font-weight: 100;
+    margin-bottom: 3vh;
+}
+
+.resume span{
+    color: rgb(49, 194, 251);
+}
+
+.download a{
+    margin: 1vh 0;
+    padding: 16px 35px;
+    text-decoration: none;
+    border: orange 1px solid;
+    border-radius: 35px;
+    letter-spacing: 2px;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+
+.download a:hover{
+    background-color: orange;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+/* Contact section */
+.Contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    padding-top: 10vh;
+    background-color: orange;
+}
+
+.Ask h3{
+    color: rgb(21, 46, 69);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Links1{
+    justify-content: center;
+    align-items: start;
+    margin-left: 30vh;
+    margin-top: 20px;
+    gap: 20px;
+}
+.Links1 h3{
+    color: rgb(1, 37, 70);
+    font-size: 20px;
+}
+.Links1 a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+#f{
+    padding-left: 2px;
+}
+#f:hover{
+    text-decoration: underline rgb(6, 81, 146);
+}
+#g{
+    padding-left: 1px;
+}
+#g:hover{
+    text-decoration: underline rgb(6, 81, 146);
+}
+#h{
+    padding-right: 1px;
+}
+#h:hover{
+    text-decoration: underline rgb(6, 81, 146);
+}
+#j{
+    padding-left: 0.1px;
+}
+#j:hover{
+    text-decoration: underline rgb(6, 81, 146);
+}
+
+.Links2{
+    color: black;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 0 20vh;
+}
+
+.Links3{
+    justify-content: center;
+    align-items: center;
+    margin-right: 30vh;
+    margin-top: 20px;
+}
+.Links3 h3{
+    color: rgb(1, 37, 70);
+    font-size: 20px;
+}
+.Links3 a{
+    color: black;
+    font-size: 30px;
+}
+#k i{
+    padding-left: 14px;
+}
+#k i:hover{
+    text-decoration: underline rgb(6, 81, 146);
+}
+#l i{
+    padding-left: 14px;
+}
+#l i:hover{
+    text-decoration: underline rgb(6, 81, 146);
+}
+#m i{
+    padding-left: 14px;
+}
+#m i:hover{
+    text-decoration: underline rgb(6, 81, 146);
+}
+
+.Personal{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 6vh;
+}
+
+#biger1 i{
+    font-size: 12px;
+    font-weight: 1000;
+}
+#biger2 i{
+    font-size: 15px;
+    font-weight: 1000;
+}
+#biger3 i{
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+.lastone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+}
+
